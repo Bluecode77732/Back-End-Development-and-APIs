@@ -1,0 +1,14 @@
+{
+    "name": "fcc-learn-npm-package-json",
+    "author": "Bluecode77732",
+    "description": "description",
+    "keywords": ["freecodecamp"],
+    "license": "Bluecode77732",
+    "version": "?",
+    "dependencies": {
+        "package1" : "version",
+        "package2" : "~version",
+        "package3" : "^version"
+    }
+}
+  
