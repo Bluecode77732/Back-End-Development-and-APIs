@@ -71,9 +71,27 @@ app.use(express.static(__dirname + "/public/style.css"));
 */
 
 app.get("/json", (req, res) => {
+    let message = "Hello json";
+    if (process.env.MESSAGE_STYLE === "uppercase") {
+        message = message.toUpperCase();
+    }
     res.json({
         "message" : "Hello json"
     });
 });
+
+
+/** Use the .env File
+ * The .env file is a hidden file that is used to pass environment variables to your application. 
+ * Secret type of file, which means 'no one' but 'I' can access it.
+ * To store API key keep in private or public.
+ * I can store API keys from external services or your database URI. 
+ * I can also use it to store configuration options. 
+ * By setting configuration options, I can change the behavior of my application, 
+   without the need to rewrite some code.
+ 
+ * 
+ * 
+*/
 
 module.exports = app;
