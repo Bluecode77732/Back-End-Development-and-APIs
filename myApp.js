@@ -72,7 +72,7 @@ app.use(express.static(__dirname + "/public/style.css"));
 
 app.get("/json", (req, res) => {
     res.json({
-        message : "Hello json"
+        "message" : "Hello json"
     });
 });
 
